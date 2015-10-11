@@ -171,5 +171,14 @@ namespace SWHXInject
         {
 
         }
+
+        private void InjectMain_Load(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            if (random.Next(9) == 1)
+            {
+                panel1.BackgroundImage = SWHXInject.Properties.Resources.realicon;
+            }
+        }
     }
 }

@@ -43,6 +43,8 @@
             // 
             this.panel1.AllowDrop = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackgroundImage = global::SWHXInject.Properties.Resources.beicon;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(13, 13);
@@ -127,6 +129,7 @@
             this.Name = "InjectMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RunBE - Version \'Di$able\' (1.1)";
+            this.Load += new System.EventHandler(this.InjectMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
